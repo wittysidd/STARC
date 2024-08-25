@@ -168,9 +168,9 @@ fun LoginScreen(navController : NavController)      // common for all MNC<GOVT<C
                     onClick = {
                         if (!email.isNullOrEmpty() || !password.isNullOrBlank()) {
 
-                            if ((loginInfo == MNC)) {
+                            if (email == "mnc@gmail.com" && password == "87654321"&&(loginInfo == MNC)) {
                                 navController.navigate(Screen.MNC.route)
-                            } else if ((loginInfo == govt)) {
+                            } else if (email == "govt@gmail.com" && password == "87654321"&&(loginInfo == govt)) {
                                 navController.navigate(Screen.Govt.route)
                             } else if ((loginInfo == Cont)) {
                                 enabled = false
